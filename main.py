@@ -12,7 +12,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from youtube_transcript_api import YouTubeTranscriptApi
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 
 @st.cache_resource
 def instructor_embeddings():
